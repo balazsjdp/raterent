@@ -8,7 +8,6 @@ router.route('/register').post((req,res) => {
     let salt = bcrypt.genSaltSync(10);
     let hashedPassword = bcrypt.hashSync(userPassword, salt);
 
-    console.log(hashedPassword)
     const newUser = new User({userName: userName,userEmail:userEmail,userPassword:hashedPassword,userFirstName:userFirstName,userLastName:userLastName})
 
     newUser.save()
