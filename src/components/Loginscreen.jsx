@@ -38,7 +38,6 @@ class Loginscreen extends Component {
         return ( 
             <Fragment>
                 <Grid container
-                        container
                         spacing={0}
                         direction="column"
                         alignItems="center"
