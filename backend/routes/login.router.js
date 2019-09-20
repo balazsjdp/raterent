@@ -16,9 +16,9 @@ router.route('/verifyCredentials').post((req,res) => {
                 isPasswordValid: isPasswordValid
             })
         })
-        .catch((err) => res.status(404).json({
-            error_description: "This user doesn't exists in the database!",
-            error_details: err
+        .catch((err) => res.json({
+            userFound: false,
+            isPasswordValid: false
         }))
 })
 

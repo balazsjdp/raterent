@@ -42,7 +42,7 @@ const styles = {
 }
 
 
-class Loginscreen extends Component {
+class Registrationscreen extends Component {
     state = { 
         loginUserName: '',
         loginUserPassword: ''
@@ -96,7 +96,7 @@ class Loginscreen extends Component {
                                 <Grid container>
                                     <Grid item xs={12} align="center">
                                         <Typography variant="h4" gutterBottom>
-                                        Bejelentkezés
+                                        Regisztráció
                                         </Typography>
                                     </Grid>
                                 </Grid>
@@ -130,7 +130,7 @@ class Loginscreen extends Component {
                                     <Grid item xs={12} align="center"> <Button size="large" onClick={this.doLogin} style={styles.loginButton} variant="contained" color="primary">Login</Button></Grid>
                                 </Grid>
                                 <Grid container>
-                                    <Grid item xs={12} align="right"><Typography style={styles.regLink}color="primary" variant="subtitle1"> <Link style={{textDecoration: 'none'}}to="/regisztracio">Regisztráció</Link></Typography></Grid>
+                                    <Grid item xs={12} align="right"><Typography style={styles.regLink}color="primary" variant="subtitle1"> <Link style={{textDecoration: 'none'}}to="/">Bejelentkezés</Link></Typography></Grid>
                                 </Grid>
 
                             </Paper>
@@ -165,46 +165,5 @@ class Loginscreen extends Component {
     }
 }
  
-export default Loginscreen;
+export default Registrationscreen;
 
-/*
-<Paper style={styles.paper}>
-    <Grid container>
-        <Grid item xs={12} align="center">
-            <Typography variant="h4" gutterBottom>
-            Bejelentkezés
-            </Typography>
-        </Grid>
-    </Grid>
-
-    <br/>
-    <TextField
-        id="standard-with-placeholder"
-        label="Felhasználónév"
-        placeholder="Username"
-        style={styles.textField}
-        margin="normal"
-        fullWidth
-    />
-    <br/>
-    <TextField
-        id="standard-password-input"
-        label="Jelszó"
-        style={styles.textField}
-        type="password"
-        autoComplete="current-password"
-        margin="normal"
-        fullWidth
-    />
-    <br/>
-
-    <Grid container>
-        <Grid item xs={12} align="center"> <Button size="large"  style={styles.loginButton} variant="contained" color="primary">Login</Button></Grid>
-    </Grid>
-
-
-</Paper>
-
-
-
-*/
