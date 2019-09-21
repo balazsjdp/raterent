@@ -33,7 +33,8 @@ const styles = {
 class Loginscreen extends Component {
     state = { 
         loginUserName: '',
-        loginUserPassword: ''
+        loginUserPassword: '',
+        sessionIsAlive: 0
      }
      constructor(props) {
         super(props);
@@ -44,6 +45,7 @@ class Loginscreen extends Component {
         return ( 
             <Fragment>
                <CssBaseline />
+                    <p>{this.state.sessionIsAlive}</p>
                     <Grid container
                         spacing={0}
                         direction="row"

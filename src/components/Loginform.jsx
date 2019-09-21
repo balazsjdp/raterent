@@ -31,6 +31,7 @@ class Loginform extends Component {
             
             if(response.data.userFound == true && response.data.isPasswordValid == true){
                 window.location.pathname = '/mainpage'
+                localStorage.setItem('rateRentSessionToken', response.data.sessionToken)
             }else{
                 document.getElementById('errorMessage').style.display = 'block'
             }
