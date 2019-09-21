@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Loginscreen from './components/Loginscreen';
-import Registrationscreen from './components/Registrationscreen';
+import Loginscreen from './pages/Loginscreen';
+import Registrationscreen from './pages/Registrationscreen';
 
 const App = () => {
 

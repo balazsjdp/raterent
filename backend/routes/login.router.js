@@ -5,7 +5,6 @@ const bcrypt = require('bcryptjs');
 
 router.route('/verifyCredentials').post((req,res) => {
     const {userName,userPassword} = req.body;
-
     User.find({userName: userName})
         .then((userDataFromDb) => {
             let loginPassword = userPassword
