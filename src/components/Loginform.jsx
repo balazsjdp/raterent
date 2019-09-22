@@ -88,7 +88,7 @@ class Loginform extends Component {
                     <Grid item xs={12} align="center"> <Button size="large" onClick={this.doLogin} style={this.props.style.loginButton} variant="contained" color="primary">Login</Button></Grid>
                 </Grid>
                 <Grid container>
-                    <Grid item xs={12} align="right"><Typography style={this.props.style.regLink}color="primary" variant="subtitle1"> <Link style={{textDecoration: 'none'}}to="/regisztracio">Regisztráció</Link></Typography></Grid>
+                    <Grid item xs={12} align="right"><Typography style={this.props.style.regLink}color="primary" variant="subtitle1"> <Link style={{textDecoration: 'none'}}to="/regisztracio">Nincs még fiókod? Regisztrálj most!</Link></Typography></Grid>
                 </Grid>
             </Paper>
          );

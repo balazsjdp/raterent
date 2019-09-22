@@ -10,19 +10,23 @@ const axios = require('axios');
 class App extends Component {
   state = {  }
 
-  checkSession(){
+  async checkSession(){
     axios.post('http://localhost:5000/login/checkIfAliveSession', {
       token: localStorage.getItem('rateRentSessionToken')
         }).then((response) => {
           if(response.data.sessionIsAlive == 0 && window.location.pathname != '/login'){
+            window.location.pathname = '/login'
+          }else if(response.data.sessionIsAlive == 1 && (window.location.pathname == '/login' || window.location.pathname == '/regisztracio')){
+            window.location.pathname = '/home'
+          }else if(response.data.sessionIsAlive == 0 && window.location.pathname == '/home'){
             window.location.pathname = '/login'
           }
         })
   }
 
 
-  componentDidMount(){
-    this.checkSession()
+  async componentWillMount(){
+    await this.checkSession()
   }
 
 

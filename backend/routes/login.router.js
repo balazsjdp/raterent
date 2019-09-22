@@ -12,9 +12,9 @@ router.route('/checkIfAliveSession').post((req,res) => {
         .then((response) =>{
             console.log(response)
             if(response && response[0].validUntil > moment()){
-                res.send('Session is alive')
+                res.send({sessionIsAlive : 1})
             } else{
-                res.send('No session is alive')
+                res.send({sessionIsAlive : 0})
             }
         })
 

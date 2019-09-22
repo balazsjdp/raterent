@@ -18,6 +18,7 @@ const userSchema = new Schema({
     userPassword: {
         type: String,
         required: true,
+        minlength: 8
     },
     userFirstName: {
         type: String,

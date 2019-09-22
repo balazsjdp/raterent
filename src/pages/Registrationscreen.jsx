@@ -58,7 +58,7 @@ class Registrationscreen extends Component {
                         style={{ minHeight: '100vh' }}
                     >
                         <Grid item xs={10} md={4}>
-                            
+                            <Registrationform style={styles}/>
                         </Grid>
                     </Grid>
             </Fragment>
