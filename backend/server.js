@@ -27,6 +27,8 @@ app.use('/registration', registrationRouter);
 const loginRouter = require('./routes/login.router');
 app.use('/login', loginRouter);
 
+const basicRouter = require('./routes/basic.router')
+app.use('/basic', basicRouter);
 
 app.listen(port, () => {
     console.log('Server running on port ' + port)

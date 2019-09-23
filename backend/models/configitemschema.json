@@ -1,0 +1,11 @@
+{
+
+    "configItemCategory": "navbar",
+    "configItemName"    : "/login",
+    "configItemContent" : {
+        "availableNavbarItems": [{"pageName" : "Loginscreen", "displayName" : "Bejelentkezés", "isActive" : true},
+                                 {"pageName" : "Registrationscreen", "displayName" : "Regisztráció", "isActive" : false}]
+        }
+
+
+}

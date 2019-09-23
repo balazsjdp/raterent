@@ -45,7 +45,6 @@ class Loginscreen extends Component {
         return ( 
             <Fragment>
                <CssBaseline />
-                    <p>{this.state.sessionIsAlive}</p>
                     <Grid container
                         spacing={0}
                         direction="row"
