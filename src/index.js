@@ -12,9 +12,9 @@ import deepPurple from '@material-ui/core/colors/deepPurple';
 const theme = createMuiTheme({
     palette: {
         secondary: {
-          light: '#339ba5',
-          main: '#00838f',
-          dark: '#005b64',
+          light: '#f73378',
+          main: '#f50057',
+          dark: '#ab003c',
           contrastText: '#fff',
         },
         primary: {
@@ -28,6 +28,7 @@ const theme = createMuiTheme({
 
 render(
 <MuiThemeProvider theme={theme}>
+  
     < App />
 </MuiThemeProvider>,
 document.getElementById('root')

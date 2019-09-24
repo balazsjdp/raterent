@@ -201,7 +201,7 @@ class Registrationform extends Component {
                     required
                     id="passwordConfirm"
                     error={this.state.passwordConfirm.length == 0 ? true : false}
-                    helperText = {this.state.passwordConfirm.length == 0 ? 'Jelszó megerősítés szükséges!' : false}
+                    helperText = {this.state.passwordConfirm.length == 0 ? 'Jelszó megerősítés szükséges!' : this.state.password.value !== this.state.passwordConfirm.value ? 'A jelszavak nem egyeznek!' : false}
                     label="Jelszó Újra"
                     style={this.props.style.textField}
                     type="password"
